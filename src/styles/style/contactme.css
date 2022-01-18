@@ -1,0 +1,74 @@
+.contact_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_box h1 {
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.contact_box input {
+  padding: 10px;
+  margin: 10px 10px;
+}
+
+.contact_box input:focus {
+  outline: 2px ridge rgba(255, 219, 12, 0.3);
+}
+.contact_box textarea:focus {
+  outline: 2px ridge rgba(255, 219, 12, 0.3);
+}
+
+.contact_box textarea {
+  padding: 10px;
+  margin: 10px 10px 20px 10px;
+  height: 200px;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact_box button {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  font-weight: 800;
+  background-color: #ffed50;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  transition: all 0.5s ease;
+}
+
+.contact_box button:hover {
+  /* animation-name: button_animate;
+  animation-duration: 4s;
+  animation-iteration-count: 1; */
+  scale: 1.4;
+}
+
+/* .
+@keyframes button_animate {
+  50% {
+    background-color: black;
+    color: #ffed50;
+  }
+
+  100% {
+    background-color: #ffed50;
+    color: black;
+  }
+} */
+
+.contact_box button:focus {
+  box-shadow: none;
+  background-color: white;
+  color: black;
+  box-shadow: inset 0 0 5px #000000;
+}

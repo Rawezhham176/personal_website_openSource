@@ -1,0 +1,511 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.home_box {
+  width: 50%;
+  animation: homeBo 3s 1;
+}
+
+.rawezh_img {
+  position: relative;
+}
+
+.rawezh_img img {
+  width: 100%;
+  float: right;
+  margin-bottom: 30px;
+}
+
+.home_text {
+  width: 30%;
+  position: relative;
+}
+
+.home_text h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: -20px;
+}
+
+.home_text h1 span {
+  font-size: 150px;
+  font-weight: 600;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: -10px;
+}
+
+.home_text h1:nth-child(1) {
+  color: white;
+}
+
+.home_text h1:nth-child(2) {
+  font-family: "Poppins", sans-serif;
+}
+
+.home_text h1:nth-child(2) span:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.home_text h1:nth-child(2) span:nth-child(2) {
+  color: white;
+  animation: animate1 4s ease-in-out infinite;
+  transition: all 0.5s ease;
+}
+
+.home_text h1:nth-child(2) span:nth-child(2):hover {
+  color: #ffed50;
+}
+
+@keyframes animate1 {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 60%,
+      6% 64%,
+      14% 63%,
+      17% 59%,
+      25% 57%,
+      37% 57%,
+      39% 60%,
+      41% 61%,
+      50% 64%,
+      58% 64%,
+      64% 59%,
+      71% 44%,
+      77% 35%,
+      85% 30%,
+      99% 25%,
+      100% 98%,
+      1% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 35%,
+      10% 41%,
+      14% 48%,
+      19% 53%,
+      30% 48%,
+      34% 50%,
+      37% 49%,
+      42% 54%,
+      50% 64%,
+      56% 68%,
+      61% 73%,
+      70% 70%,
+      77% 55%,
+      86% 53%,
+      100% 56%,
+      100% 98%,
+      1% 100%
+    );
+  }
+}
+
+.home_text p {
+  font-size: 34px;
+  line-height: 1.5;
+  margin-top: 200px;
+  color: white;
+}
+
+.video {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.projects_box {
+  margin-top: 20%;
+  margin-bottom: 30%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.projects_box div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects_box div h1 {
+  color: white;
+  text-align: right;
+  font-size: 100px;
+}
+
+.projects_box div h1 span {
+  text-decoration: underline;
+}
+
+.projects_box div img {
+  width: 100%;
+}
+
+.projects_box div img:nth-child(2) {
+  margin-top: 10%;
+}
+
+.projects_box img {
+  width: 40%;
+  margin-right: 10%;
+}
+
+.afterhead_box {
+  margin-top: 10%;
+}
+
+.afterhead_box ul {
+  list-style: none;
+  text-align: center;
+}
+
+.afterhead_box ul li {
+  display: inline;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.afterhead_box ul li a img {
+  width: 10%;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.afterhead_box ul li a img:hover {
+  scale: 1.4;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  border-top: 1px solid #ffed50;
+  width: 90%;
+  height: 150px;
+  padding: 5%;
+}
+
+.footer ul {
+  text-align: center;
+}
+
+.footer ul li {
+  display: inline;
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.footer ul li:hover {
+  color: #ffed50;
+  scale: 1.3;
+}
+
+.icons:hover {
+  color: #ffed50;
+  scale: 1.2;
+}
+
+.icons {
+  color: white;
+  margin-right: 10px;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.footer1 {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.footer1 h3 {
+  font-weight: 400;
+  color: white;
+  margin-top: -10px;
+}
+
+.bubble_box {
+  position: relative;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  background-color: white;
+  width: 100%;
+
+  border-radius: 50px;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.bubble_box h1 {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.bubble_box p {
+  font-size: 25px;
+  font-weight: 300;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 80px;
+}
+
+.github_head {
+  color: white;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 50px;
+  font-weight: 200;
+  transition: all 0.5s ease;
+  text-shadow: 0px 5px 12px rgba(0, 0, 0, 0.4);
+}
+
+.github_head span:hover {
+  color: #ffed50;
+}
+
+.github_box {
+  display: flex;
+  flex-direction: row;
+  column-count: 2;
+  justify-content: space-between;
+  padding: 0 60px 0 60px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.github_box div {
+  margin-right: 30px;
+  margin-bottom: 5%;
+}
+
+.github_box div img {
+  width: 20%;
+}
+
+.github_box div button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-top: 50px;
+  width: 70%;
+  border-radius: 100px;
+}
+
+.github_box div button:hover {
+  background-color: #ffed50;
+}
+
+.github_box_ {
+  transition: all 0.5s ease;
+  margin-bottom: 100px;
+}
+
+.github_box div {
+  padding: 20px;
+  width: 40%;
+  border-radius: 20px;
+  border: none;
+  transition: all 1s ease;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.4);
+}
+
+.github_box1 {
+  background: linear-gradient(#fff06e, #ffe600);
+}
+
+.github_box2 {
+  background: linear-gradient(#a3ff9a, #15ff00);
+}
+
+.github_box3 {
+  background: linear-gradient(#8effff, #00ffff);
+}
+
+.github_box4 {
+  background: linear-gradient(#8ba0ff, #002fff);
+  color: white;
+}
+
+.github_box div:hover {
+  background: #1460ec;
+  color: white;
+  scale: 1.2;
+}
+
+.link_all {
+  text-decoration: none;
+  color: white;
+}
+
+.link_all1 {
+  text-decoration: none;
+  color: white;
+}
+
+.link_all1:hover {
+  scale: 1.2;
+  color: #ffed50;
+}
+
+.icons_skills {
+  color: #000000;
+  font-size: 50px;
+  margin-right: 10%;
+  margin-top: 5%;
+  transition: all 0.5s ease;
+}
+
+.icons_skills:hover {
+  scale: 1.4;
+}
+
+.skills h1 {
+  margin-bottom: -25px;
+}
+
+.skills ul {
+  list-style: none;
+  text-align: center;
+  margin-right: 5%;
+  margin-left: 10%;
+}
+
+.skills ul li {
+  display: inline;
+  text-align: center;
+}
+
+.skills {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.github_box div p {
+  font-size: 18px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1440px) {
+  .home_text h1 span {
+    font-size: 120px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .home_text h1 span {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .home {
+    display: block;
+  }
+
+  .home_text h1 span {
+    font-size: 190px;
+  }
+
+  .home_box {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .home_text {
+    width: 100%;
+  }
+
+  .home_text p {
+    margin-top: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home_text h1 span {
+    font-size: 160px;
+  }
+  .home_text p {
+    margin-top: 230px;
+  }
+  .footer {
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .home_text h1 span {
+    font-size: 120px;
+  }
+  .home_text p {
+    margin-top: 180px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .home_text h1 span {
+    font-size: 90px;
+  }
+  .home_text p {
+    margin-top: 140px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .afterhead_box ul li a img {
+    width: 20%;
+  }
+
+  .footer {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .footer {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .github_box div {
+    width: 100%;
+    margin-bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .footer ul li {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .footer {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .bubble_box {
+    padding: 20px 0px 20px 0px;
+  }
+
+  .skills ul {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.loader_box {
+  position: absolute;
+  background-color: #343434;
+  width: 100%;
+  height: 120vh;
+  z-index: 1000;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.loader_box h1 span {
+  font-size: 200px;
+  font-weight: 600;
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  font-family: "Poppins", sans-serif;
+}
+
+.loader_box h1 span {
+  color: white;
+}
+
+.loader_box span:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.loader_box span:nth-child(2) {
+  color: white;
+  animation: animate1 4s ease-in-out infinite;
+  transition: all 0.5s ease;
+}
+
+.loader_box span:nth-child(2):hover {
+  color: #ffed50;
+}
+
+@keyframes animate1 {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 60%,
+      6% 64%,
+      14% 63%,
+      17% 59%,
+      25% 57%,
+      37% 57%,
+      39% 60%,
+      41% 61%,
+      50% 64%,
+      58% 64%,
+      64% 59%,
+      71% 44%,
+      77% 35%,
+      85% 30%,
+      99% 25%,
+      100% 98%,
+      1% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 35%,
+      10% 41%,
+      14% 48%,
+      19% 53%,
+      30% 48%,
+      34% 50%,
+      37% 49%,
+      42% 54%,
+      50% 64%,
+      56% 68%,
+      61% 73%,
+      70% 70%,
+      77% 55%,
+      86% 53%,
+      100% 56%,
+      100% 98%,
+      1% 100%
+    );
+  }
+}
+
+.bubbles1 {
+  background-color: #ffed50;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  border-radius: 100%;
+  animation: identifier 3s infinite;
+  animation-delay: 1s;
+}
+
+.bubbles2 {
+  background-color: #ffed50;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  border-radius: 100%;
+  animation: identifier 4s infinite;
+}
+
+.bubbles3 {
+  background-color: #ffed50;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  border-radius: 100%;
+  animation: identifier 3.5s infinite;
+  animation-delay: 1s;
+}
+
+.bubbles4 {
+  background-color: #ffed50;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  border-radius: 100%;
+  animation: identifier 3.5s infinite;
+}
+
+.bubbles5 {
+  background-color: #ffed50;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 80%;
+  left: 70%;
+  border-radius: 100%;
+  animation: identifier 3s infinite;
+  animation-delay: 1s;
+}
+
+.bubbles6 {
+  background-color: #ffed50;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  border-radius: 100%;
+  animation: identifier 4s infinite;
+}
+
+@keyframes identifier {
+  to {
+    opacity: 0;
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 3000px) {
+  .loader_box h1 span {
+    font-size: 300px;
+  }
+}
+
+@media screen and (max-width: 1785px) {
+  .loader_box h1 span {
+    font-size: 250px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .loader_box h1 span {
+    font-size: 200px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .loader_box h1 span {
+    font-size: 170px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .loader_box h1 span {
+    font-size: 120px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .loader_box h1 span {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .loader_box h1 span {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .loader_box h1 span {
+    font-size: 70px;
+  }
+
+  .loader_box {
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .loader_box h1 span {
+    font-size: 60px;
+  }
+}
